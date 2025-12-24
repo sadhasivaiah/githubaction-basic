@@ -3,14 +3,14 @@ name: workflow to run linux commands
 on: workflow_dispatch
 jobs:
   job1:
-      runs_on: ubuntu-latest
+      runs-on: ubuntu-latest
       steps:
       - name: run linux command
-        run: echo "Hello ALL"
+        run: pwd
   job2:
-      runs_on: ubuntu-22.04
+      runs-on: ubuntu-22.04
       steps:
       - name: run multiple linux commands
-        run: 
-        - hostname -s 
-        - echo "Thankyou ALL"
+        run: |
+        hostname -s 
+        echo "Welcome to github ations tutorial"
