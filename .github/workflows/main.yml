@@ -3,11 +3,11 @@ name: workflow to run linux commands
 on: workflow_dispatch
 jobs:
    job1:
-    runs_on: ubuntu-latest
-    steps:
-    - name: run linux command
-      run: echo "Hello ALL"
-    job2:
+      runs_on: ubuntu-latest
+      steps:
+      - name: run linux command
+        run: echo "Hello ALL"
+   job2:
       runs_on: ubuntu-22.04
       steps:
       - name: run multiple linux commands
